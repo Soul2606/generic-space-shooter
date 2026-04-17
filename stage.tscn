@@ -11,3 +11,6 @@ position = Vector2(340, 225)
 [node name="PlayerController" type="Node" parent="Ship" unique_id=507372780 node_paths=PackedStringArray("ship")]
 script = ExtResource("2_aees8")
 ship = NodePath("..")
+
+[node name="Ship2" parent="." unique_id=1823885469 instance=ExtResource("1_8ay24")]
+position = Vector2(167, 336)

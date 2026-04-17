@@ -28,4 +28,3 @@ func _physics_process(delta: float) -> void:
 		rot_direction += -1
 	ship.ang_velocity += rot_direction * ship.turn_speed
 	
-	ship.apply_movement(delta)
