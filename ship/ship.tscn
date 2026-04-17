@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b1ala8a3iho46"]
+
+[ext_resource type="Script" uid="uid://cavtek6lja7rh" path="res://ship/ship.gd" id="1_snhhr"]
+[ext_resource type="Texture2D" uid="uid://b7vwrbh5wx1vv" path="res://assets/ship-sprites/simple-ship.svg" id="2_2jgil"]
+[ext_resource type="Script" uid="uid://bl05jx73gmwth" path="res://common/soft_collision.gd" id="3_1vtf4"]
+
+[node name="Ship" type="Node2D" unique_id=1823885469]
+script = ExtResource("1_snhhr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=274501438]
+position = Vector2(5.9604645e-08, 5.9604645e-08)
+scale = Vector2(0.21999998, 0.21999998)
+texture = ExtResource("2_2jgil")
+
+[node name="SoftCol" type="Node" parent="." unique_id=339567606 node_paths=PackedStringArray("collision_shape")]
+script = ExtResource("3_1vtf4")
+collision_shape = NodePath("../Area2D")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=479713955]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=220199198]
+polygon = PackedVector2Array(0, -10, 9, 6, 0, 10, -9, 6)
