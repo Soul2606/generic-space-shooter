@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      inkscape:zoom="3.8042224"
      inkscape:cx="34.961153"
-     inkscape:cy="56.779015"
+     inkscape:cy="57.041881"
      inkscape:window-width="1440"
      inkscape:window-height="828"
      inkscape:window-x="0"
@@ -41,6 +41,7 @@
     <path
        id="path1"
        style="fill:#4464b0;fill-opacity:1;fill-rule:evenodd;stroke:#2e323f;stroke-width:8.73191;stroke-opacity:1;paint-order:fill markers stroke"
-       d="M 49.936752,5.6597187 85.038498,34.502446 92.649732,79.36183 50.120326,95.339472 7.4653412,79.5013 14.893001,34.680934 Z" />
+       d="M 50,6 75,35 92.5,80 50,95 7.5,80 25,35 Z"
+       sodipodi:nodetypes="ccccccc" />
   </g>
 </svg>

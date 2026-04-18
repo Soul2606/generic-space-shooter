@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 		lat_direction += Vector2(1,0)
 	if Input.is_action_pressed('move_left'):
 		lat_direction += Vector2(-1,0)
-	ship.thrust(lat_direction.normalized() * ship.speed)
+	ship.add_thrust(lat_direction.normalized() * ship.speed)
 	
 	# Rotation in degrees going clockwise
 	var rot_direction := 0.0
@@ -26,5 +26,5 @@ func _physics_process(delta: float) -> void:
 		rot_direction += 1
 	if Input.is_action_pressed("turn_left"):
 		rot_direction += -1
-	ship.ang_velocity += rot_direction * ship.turn_speed
+	ship.ang_thrust += rot_direction * ship.turn_speed
 	

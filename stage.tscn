@@ -2,15 +2,30 @@
 
 [ext_resource type="PackedScene" uid="uid://b1ala8a3iho46" path="res://ship/ship.tscn" id="1_8ay24"]
 [ext_resource type="Script" uid="uid://fggo8wiqc8qb" path="res://common/ship_controller.gd" id="2_aees8"]
+[ext_resource type="Script" uid="uid://d1skis3yb1nv8" path="res://battle_camera.gd" id="3_rnkuw"]
+[ext_resource type="Texture2D" uid="uid://cttw1g6gc2mqs" path="res://assets/drawing.svg" id="4_gx6sy"]
 
 [node name="Stage" type="Node2D" unique_id=1415891321]
 
+[node name="Background" type="Node" parent="." unique_id=663750636]
+
+[node name="Parallax2D" type="Parallax2D" parent="Background" unique_id=23217893]
+z_index = -1
+scroll_scale = Vector2(0.2, 0.2)
+scroll_offset = Vector2(593, 336)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/Parallax2D" unique_id=582431659]
+texture = ExtResource("4_gx6sy")
+
 [node name="Ship" parent="." unique_id=974828547 instance=ExtResource("1_8ay24")]
-position = Vector2(340, 225)
+position = Vector2(585, 329)
 
 [node name="PlayerController" type="Node" parent="Ship" unique_id=507372780 node_paths=PackedStringArray("ship")]
 script = ExtResource("2_aees8")
 ship = NodePath("..")
+
+[node name="Camera2D" type="Camera2D" parent="Ship" unique_id=887206430]
+script = ExtResource("3_rnkuw")
 
 [node name="Ship2" parent="." unique_id=1823885469 instance=ExtResource("1_8ay24")]
 position = Vector2(167, 336)
