@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b0sfil3q63o6i"]
+
+[ext_resource type="Script" uid="uid://begd14dshphwg" path="res://ship/weapon.gd" id="1_ow3k3"]
+[ext_resource type="Texture2D" uid="uid://drgaelve5w6u7" path="res://icon.svg" id="2_6a4f1"]
+
+[node name="Autocannon" type="Node2D" unique_id=1979146230]
+script = ExtResource("1_ow3k3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1343581375]
+position = Vector2(0, -9.000001)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("2_6a4f1")

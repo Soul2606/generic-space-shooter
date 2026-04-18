@@ -1,4 +1,5 @@
 extends Camera2D
+class_name CombatCamera
 
 # zoom magnitude
 var zoom_mag := 1.0
@@ -6,7 +7,10 @@ var zoom_mag := 1.0
 @export var zoom_innest := 1.0
 @export var zoom_outest := -3.0
 
+
+
 func _process(delta: float) -> void:
+	position = get_parent().position
 	
 	if Input.is_action_just_pressed("zoom_in"):
 		zoom_mag -= zoom_speed

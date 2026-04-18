@@ -7,6 +7,8 @@ class_name Ship
 @export var top_turn_speed := 100.0
 @export var turn_friction := 0.1
 @export var size_class:int = 1
+@export var team:int = 1
+@export var mounts:Array[WeaponMount]
 
 var lat_thrust := Vector2(0,0)
 var ang_thrust := 0.0

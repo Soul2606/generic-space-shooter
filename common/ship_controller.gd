@@ -1,6 +1,7 @@
 extends Node
 
 @export var ship:Ship
+@export var battle:Battlefield
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,4 +28,10 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("turn_left"):
 		rot_direction += -1
 	ship.ang_thrust += rot_direction * ship.turn_speed
+
+
+
+func _process(delta: float) -> void:
+	for mount in ship.mounts:
+		mount.rotate_towards(battle.camera.get_global_mouse_position(), delta)
 	
