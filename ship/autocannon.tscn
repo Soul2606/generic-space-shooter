@@ -5,6 +5,7 @@
 
 [node name="Autocannon" type="Node2D" unique_id=1979146230]
 script = ExtResource("1_ow3k3")
+turn_speed = 2.5
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1343581375]
 position = Vector2(0, -9.000001)

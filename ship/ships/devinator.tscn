@@ -8,7 +8,7 @@
 [node name="Ship" type="RigidBody2D" unique_id=1387572425 node_paths=PackedStringArray("mounts")]
 gravity_scale = 0.0
 script = ExtResource("1_snhhr")
-mounts = [NodePath("Hardpoint1"), NodePath("Hardpoint2")]
+mounts = [NodePath("Hardpoint1"), NodePath("Hardpoint2"), NodePath("Turret1")]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=274501438]
 scale = Vector2(0.96999997, 0.96999997)
@@ -20,12 +20,21 @@ polygon = PackedVector2Array(0, -49, 28, -17, 47, 32, 0, 48, -47, 32, -28, -17)
 
 [node name="Hardpoint1" parent="." unique_id=1395649745 instance=ExtResource("3_ipc7q")]
 position = Vector2(-27, -18)
+arc = 15.0
 weapon_path = NodePath("Autocannon")
 
 [node name="Autocannon" parent="Hardpoint1" unique_id=1979146230 instance=ExtResource("4_1664b")]
 
 [node name="Hardpoint2" parent="." unique_id=641325909 instance=ExtResource("3_ipc7q")]
 position = Vector2(26, -18)
+arc = 15.0
 weapon_path = NodePath("Autocannon")
 
 [node name="Autocannon" parent="Hardpoint2" unique_id=282491568 instance=ExtResource("4_1664b")]
+
+[node name="Turret1" parent="." unique_id=1352600323 instance=ExtResource("3_ipc7q")]
+position = Vector2(0, 18)
+arc = 360.0
+weapon_path = NodePath("Autocannon")
+
+[node name="Autocannon" parent="Turret1" unique_id=283215156 instance=ExtResource("4_1664b")]

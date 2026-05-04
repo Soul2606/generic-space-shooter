@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bw5kpeb6xm574"]
 
-[ext_resource type="PackedScene" uid="uid://b1ala8a3iho46" path="res://ship/devinator.tscn" id="1_8ay24"]
+[ext_resource type="PackedScene" uid="uid://b1ala8a3iho46" path="res://ship/ships/devinator.tscn" id="1_8ay24"]
 [ext_resource type="Script" uid="uid://dr3kdxo0akx7u" path="res://common/battle.gd" id="1_16g40"]
 [ext_resource type="Script" uid="uid://fggo8wiqc8qb" path="res://common/ship_controller.gd" id="2_aees8"]
 [ext_resource type="Script" uid="uid://d1skis3yb1nv8" path="res://battle_camera.gd" id="3_rnkuw"]
