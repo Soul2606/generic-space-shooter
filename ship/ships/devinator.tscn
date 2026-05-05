@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cavtek6lja7rh" path="res://ship/ship.gd" id="1_snhhr"]
 [ext_resource type="Texture2D" uid="uid://b7vwrbh5wx1vv" path="res://assets/ship-sprites/simple-ship.svg" id="2_2jgil"]
-[ext_resource type="PackedScene" uid="uid://mx8plwy7fkrm" path="res://ship/small_hardpoint.tscn" id="3_ipc7q"]
-[ext_resource type="PackedScene" uid="uid://b0sfil3q63o6i" path="res://ship/autocannon.tscn" id="4_1664b"]
+[ext_resource type="PackedScene" uid="uid://mx8plwy7fkrm" path="res://combat/mounts/small_hardpoint.tscn" id="3_ipc7q"]
+[ext_resource type="PackedScene" uid="uid://b0sfil3q63o6i" path="res://combat/weapons/autocannon.tscn" id="4_1664b"]
 
 [node name="Ship" type="RigidBody2D" unique_id=1387572425 node_paths=PackedStringArray("mounts")]
 gravity_scale = 0.0

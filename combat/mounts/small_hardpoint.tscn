@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mx8plwy7fkrm"]
 
-[ext_resource type="Script" uid="uid://du4qbik4wjw0p" path="res://ship/weapon_mount.gd" id="1_5mmp5"]
+[ext_resource type="Script" uid="uid://du4qbik4wjw0p" path="res://combat/weapon_mount.gd" id="1_5mmp5"]
 [ext_resource type="Texture2D" uid="uid://drgaelve5w6u7" path="res://icon.svg" id="2_77xe1"]
 
 [node name="SmallHardpoint" type="Node2D" unique_id=1395649745]

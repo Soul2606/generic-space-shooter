@@ -32,6 +32,8 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
-	for mount in ship.mounts:
+	for mount:WeaponMount in ship.mounts:
 		mount.rotate_towards(battle.camera.get_global_mouse_position(), delta)
+		if Input.is_action_pressed("fire_weapon"):
+			mount.weapon.fire(battle, ship)
 	

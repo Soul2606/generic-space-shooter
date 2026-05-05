@@ -10,6 +10,7 @@ class_name Ship
 @export var team:int = 1
 @export var mounts:Array[WeaponMount]
 
+var battlefield:Node
 var lat_thrust := Vector2(0,0)
 var ang_thrust := 0.0
 
@@ -19,6 +20,9 @@ var ang_thrust := 0.0
 # retreat: run away from the battle while avoiding danger
 enum Instruction {search_and_destroy, escort, retreat}
 
+
+func _ready() -> void:
+	battlefield = get_parent()
 
 
 func add_thrust(dir:Vector2):

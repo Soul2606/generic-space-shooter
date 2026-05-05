@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cttw1g6gc2mqs" path="res://assets/drawing.svg" id="4_gx6sy"]
 [ext_resource type="Script" uid="uid://cc65a623wincp" path="res://common/ship_ai.gd" id="6_vpggq"]
 
-[node name="Stage" type="Node" unique_id=122987039 node_paths=PackedStringArray("ships", "camera")]
+[node name="Stage" type="Node2D" unique_id=1255615374 node_paths=PackedStringArray("ships", "camera")]
 script = ExtResource("1_16g40")
 ships = [NodePath("Battlefield/Ship"), NodePath("Battlefield/Ship2")]
 camera = NodePath("Battlefield/Ship/Camera2D")
@@ -23,7 +23,7 @@ scroll_offset = Vector2(593, 336)
 [node name="Sprite2D" type="Sprite2D" parent="Background/Parallax2D" unique_id=582431659]
 texture = ExtResource("4_gx6sy")
 
-[node name="Battlefield" type="Node" parent="." unique_id=770796981]
+[node name="Battlefield" type="Node2D" parent="." unique_id=391191229]
 
 [node name="Ship" parent="Battlefield" unique_id=974828547 instance=ExtResource("1_8ay24")]
 position = Vector2(585, 329)
@@ -41,7 +41,7 @@ script = ExtResource("3_rnkuw")
 position = Vector2(167, 336)
 team = 2
 
-[node name="Node" type="Node" parent="Battlefield/Ship2" unique_id=1170165029 node_paths=PackedStringArray("ship", "battle")]
+[node name="AiController" type="Node" parent="Battlefield/Ship2" unique_id=1170165029 node_paths=PackedStringArray("ship", "battle")]
 script = ExtResource("6_vpggq")
 ship = NodePath("..")
 battle = NodePath("../../..")
